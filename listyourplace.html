@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="WIMDU.css">
+	<style type="text/css">
+	input{font-family: FontAwesome, "Open Sans", Verdana, sans-serif;}
+	.continue-btn{border-radius: 0px;background-color: #016db7;}
+	.fa-home, .fa-calendar ,.fa-user, .fa-location , .fa-map-marker{color:#fbbb14;}
+	.container {
+		position: relative;
+	}
+	.text-block {
+		position: absolute;
+		top: 160px;
+		left: 340px;
+		background-color:#190e0e94; 
+		color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+</style>
+</head>
+<body>
+	<body>
+		<nav class="navbar navbar-expand-sm bg-white mr-auto">
+			<a class="navbar-brand" href="assingnment.html"><img src="images/wimdu.png" width="150px" height="50px"></a>
+
+			<ul class="navbar-nav ml-auto mr-5">
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" href="help page.html">Help</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle vertical-menu" href="#" id="navbardrop" data-toggle="dropdown">
+						<img src="images/flag.png" width="20" height="20">
+					</a>
+					<div class="dropdown-menu" style="height:300px;overflow: auto;" >
+						<a class="dropdown-item text-primary" href="#"><img src="images/Argentina.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Argentina</span></a>
+						<a class="dropdown-item text-primary " href="#"><img src="images/Australia.png" width="20" height="20"class="d-inline-flex"><span class="ml-2">Australia</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Belize.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Belgie</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Brazil.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Brazil</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Canada.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Canada</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Chile.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Chile</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Colombia.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Columbia</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Costa-rica.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Costa rica</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/denmark.jpg" width="20" height="20" class="d-inline-flex"><span class="ml-2">Danmark</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/deut.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Deutschland</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Finland.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Finland</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/France.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">France</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/hellas.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Hellas</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Hongkong.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Hongkong</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/India.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">India</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Indonesia.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Indonesia</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/italia.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Italia</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Ireland.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Irelnd</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Mexico.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Mexico</span></a>
+						<a class="dropdown-item text-primary" href="#"><img src="images/Malaysia.png" width="20" height="20" class="d-inline-flex"><span class="ml-2">Malaysia</span></a>
+					</div>
+				</li>
+				<li class="nav-item dropdown" >
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						US$
+					</a>
+					<div class="dropdown-menu" style="height:300px;overflow:auto;" >
+						<table>
+							<tbody>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">AU$</a></td>
+									<td><a class="dropdown-item text-primary" href="#">AUD</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">CA$</a></td>
+									<td><a class="dropdown-item text-primary" href="#">CAD</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">CHF</a></td>
+									<td><a class="dropdown-item text-primary" href="#">CHF</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">CNY</a></td>
+									<td><a class="dropdown-item text-primary" href="#">CNY</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">DKK</a></td>
+									<td><a class="dropdown-item text-primary" href="#">DKK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">HDK</a></td>
+									<td><a class="dropdown-item text-primary" href="#">HDK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">JP</a></td>
+									<td><a class="dropdown-item text-primary" href="#">JPY</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">NO</a></td>
+									<td><a class="dropdown-item text-primary" href="#">NOK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">SEK</a></td>
+									<td><a class="dropdown-item text-primary" href="#">SEK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">HDK</a></td>
+									<td><a class="dropdown-item text-primary" href="#">HDK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">DK</a></td>
+									<td><a class="dropdown-item text-primary" href="#">HDK</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item text-primary" href="#">oop</a></td>
+									<td><a class="dropdown-item text-primary" href="#">oop</a></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="listyourplace.html"><b>List your place</b></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						<b>Recently Used </b>
+					</a>
+					<div class="dropdown-menu" style="width:300%;height: 100px;margin-left:-329%;background-color: white;font-size: 14px;">
+						<p>Log in to keep track of your previously viewed properties anytime, anywhere!</p>
+
+						<a class="dropdown-item" href="#"><center><button type="button" class="btn btn-primary">Log-in-here</button></center>
+						</a>
+
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="l.html"><b>Log In</b></a>
+				</li>
+				<button type="button" class="btn btn-warning " style="border-radius: 50px">Paris! just one step</button>
+			</ul>
+		</nav>
+
+
+		<div>
+			<img src="images/bg.jpg" style="width: 100%; height: 280px">
+			<div class="text-block"> 
+				<h2 class="text-center">LIST YOUR PLACE AND MAKE MONEY!
+				</h2>
+				<p class="text-center">Do you have an empty apartment, spare room or a holiday home? Sign up with Wimdu<br> and start renting to guests from all over the world!
+
+				</p>
+			</div>
+		</div>
+		<div class="container mb-5">
+			<div class="row">
+				<div class="col-md-8 offset-2">
+					<form class="form" role="form" style="margin-top: 80px;">
+						<div class="row">
+							<div class="col-3">
+								<label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Property type</label>
+							</div>
+							<div class="col-4">
+								<div class="input-group mb-2 mr-sm-2">
+									<div class="input-group-prepend ">
+										<div class="input-group-text bg-white "><i class="fa fa-home"></i></div>
+									</div>
+									<select class="form-control" id="exampleFormControlSelect1"  >
+										<option>Apartment</option>
+										<option>House</option>
+										<option>Private room</option>
+										<option>Chalet or cabin</option>
+										<option>Villa</option>
+										<option>Castle</option>
+										<option>Farmhouse</option>
+										<option>Treehouse</option>
+										<option>Boat</option>
+										<option>Car</option>
+									</select>
+								</div>
+							</div>
+						</div>    
+						<div class="row mt-4">
+							<div class="col-3">
+								<label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Accommodates</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+									<div class="input-group-prepend ">
+										<div class="input-group-text bg-white "><i class="fa fa-user"></i></div>
+									</div>
+									<select class="form-control" id="exampleFormControlSelect1"  >
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+									</select>
+								</div> 
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-3">
+								<label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Bedrooms</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+									<div class="input-group-prepend ">
+										<div class="input-group-text bg-white "><i class="fa fa-calendar"></i></div>
+									</div>
+									<select class="form-control" id="exampleFormControlSelect1"  >
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+									</select>
+								</div>   
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-3">
+								<label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Country</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+									<div class="input-group-prepend ">
+										<div class="input-group-text bg-white "><i class="fa fa-calendar"></i></div>
+									</div>
+									<select class="form-control" id="exampleFormControlSelect1"  >
+										<option>Germany</option>
+										<option>Spain</option>
+										<option>France</option>
+										<option>Netherlands</option>
+										<option>Italy</option>
+										<option>United Kingdom</option>
+										<option>United states</option>
+										<option>Poland</option>
+										<option>Switzerland</option>
+										<option>Denmark</option>
+										<option>Afghanistan</option>
+										<option>Albania</option>
+										<option>Algeria</option>
+										<option>American Samoa</option>
+										<option>Andorra</option>
+										<option>Angola</option>
+										<option>Anguilla</option>
+										<option>Antarctica</option>
+										<option>Antigua and Barbuda</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-3">
+								<label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >City</label>
+							</div>
+							<div class="col-6">
+								<div class="input-group mb-2 mr-sm-2">
+									<div class="input-group-prepend ">
+										<div class="input-group-text bg-white "><i class="fa fa-map-marker"></i></div>
+									</div>
+									<select class="form-control" id="exampleFormControlSelect1"  >
+										<option>Berlin,Paris,London...</option>
+									</select>
+								</div>
+
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-3">	
+
+							</div>
+							<div class="col-6">
+								<button type="submit" class="btn  continue-btn font-weight-bold text-white pl-5 pr-5">CONTINUE</button>
+							</div>  
+						</div>  
+					</form>	
+				</div>
+			</div>    
+			<div class="row mt-5">
+				<div class="col ">
+					<img class="mx-auto d-block" src="images/icon1.jpg">
+					<h6 class="text-center font-weight-bold mt-4" >EARN MONEY WITH YOUR PLACE</h6>
+					<p class="text-center text-muted font-small mt-4">Wimdu hosts earn on average 900€/month - while they sleep! Fund your next trip away or pay your bills with the extra income you make from your unused space.</p>
+				</div>
+				<div class="col">
+					<img class="mx-auto d-block" src="images/icon2.jpg" class="mr-8">
+					<h6 class="text-center font-weight-bold mt-3">YOUR DETAILS ARE SAFE</h6>
+					<p class="text-center text-muted font-small mt-4">No one other than the guests you have confirmed has access to your full name or your contact details. Only your first name and the general location of your place on the map will be visible on the website.</p>
+				</div>
+				<div class="col">
+					<img class="mx-auto d-block" src="images/icon3.jpg" class="mr-8">
+					<h6 class="text-center font-weight-bold mt-3">RECEIVE PAYMENT</h6>
+					<p class="text-center text-muted font-small mt-4">24 hours after your guests arrive and have checked in successfully, Wimdu automatically transfers your payment to your bank account. Since Wimdu takes care of the transaction, your payment is safe at all times.</p>
+				</div>
+			</div>   
+		</div>
+		<hr class="mt-5">
+		<footer class="page-footer font-small unique-color-dark mt-4">
+
+							<!-- <div style="background-color: #6351ce;">-->
+								<div class="container">
+
+									<!-- Grid row-->
+									<div class="row py-4 d-flex align-items-center">
+									</div>
+								</div>
+
+								<!-- Footer Links -->
+								<div class="container text-center text-md-left mt-5">
+
+									<!-- Grid row -->
+									<div class="row mt-3">
+
+										<!-- Grid column -->
+										<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 " style="margin-left: -19%;">
+
+											<!-- Content -->
+											<h6 class="text-uppercase text-dark " style="margin-left: -19%;">Customer service</h6>
+											<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+											<ul>
+												<li class=" text-muted" style="list-style: none;margin-left: -40%; ">How wimdu works</li>
+												<li class=" text-muted" style="list-style: none; margin-left: -40%;">FAQ and support</li>
+											</ul>
+											<h6 class="text-uppercase text-dark " style="margin-left: -19%;">Wimdu guest app</h6>
+											<ul>
+												<img src="images/new.jpg" style="margin-left: -43%;">
+											</ul>
+
+											<h6 class="text-uppercase text-dark " style="margin-left: -19%;">Wimdu host app</h6>
+											<ul>
+												<img src="images/new.jpg" style="margin-left: -42%;">
+											</ul>
+										
+
+										</div>
+										<!-- Grid column -->
+
+										<!-- Grid column -->
+										<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+											<!-- Links -->
+											<h6 class="text-uppercase text-dark" > About Wimdu</h6>
+											<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+											<p >
+												<a class="text-muted text-dark">Press</a>
+											</p>
+											<p >
+												<a class="text-muted text-dark">Jobs</a>
+											</p>
+											<p >
+												<a class="text-muted text-dark">About us</a>
+											</p>
+											<p >
+												<a class="text-muted text-dark">Testimonials</a>
+											</p>
+											
+										</div>
+										<!-- Grid column -->
+
+										<!-- Grid column -->
+										<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+											<!-- Links -->
+											<h6 class="text-uppercase text-dark ">FOLLOW US ON</h6>
+											<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+											<p >
+												<a class="text-muted">Facebook</a>
+											</p>
+											<p >
+												<a class="text-muted">Twitter</a>
+											</p>
+											<p >
+												<a class="text-muted">Google+</a>
+											</p>
+											<p >
+												<a class="text-muted">You tube</a>
+											</p>
+											
+											
+											
+
+										</div>
+										<!-- Grid column -->
+
+										<!-- Grid column -->
+										<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+											<!-- Links -->
+											<h6 class="text-uppercase =text-dark">SECURE PAYMENT</h6>
+											<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+											<p>
+											</p>
+											
+											
+											<img src="images/VISA2.jpg" class="float-left" alt="yy" width="30" height="23">
+											<img src="images/master.png" class="margin-left" alt="yy" width="30" height="23">
+											<img src="images/VISA..png" class="float-left" alt="yy" width="30" height="23">
+											<img src="images/VISA2.jpg" class="margin-left" alt="yy" width="30" height="23">
+											<img src="images/paypal.png" class="margin-left" alt="yy" width="130" height="60">
+											<img src="images/norton.png" class="margin-left" alt="yy" width="130" height="60">
+											
+											
+
+										</div>
+										<!-- Grid column -->
+
+									</div>
+									<!-- Grid row -->
+
+								</div>
+								<!-- Footer Links -->
+
+								<!-- Copyright -->
+							</div>
+							<!-- Copyright -->
+
+						</footer>
+	</body>
+	</html>
